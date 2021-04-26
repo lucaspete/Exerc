@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Exerc.css';
+import FichaCadastral from './Alunos.js';
 
 function Exerc() {
 
@@ -16,7 +17,7 @@ function Exerc() {
           <input
             value={nome}
             onChange={e => setNome(e.target.value)}
-            placeholder=""
+            placeholder="Nome"
           />
         </div>
         <div>
@@ -26,7 +27,7 @@ function Exerc() {
           <input
             value={telefone}
             onChange={e => setTelefone(e.target.value)}
-            placeholder=""
+            placeholder="Telefone"
           />
         </div>
       </form>
@@ -36,6 +37,14 @@ function Exerc() {
           <p>{telefone}</p>
         </div>
       </div>
+
+      <div className="RCentral">
+        <div className="Result">
+          <p>{FichaCadastral.Nome}</p>
+          <p>{FichaCadastral.RA}</p>
+        </div>
+      </div>
+      <div className="Result"></div>
     </div>
   );
 }
