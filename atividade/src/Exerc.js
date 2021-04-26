@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Exerc.css';
-import FichaCadastral from './Alunos.js';
+import FichaCadastral from './Aluno.js';
 
 function Exerc() {
 
